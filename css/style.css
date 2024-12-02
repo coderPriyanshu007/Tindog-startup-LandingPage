@@ -1,0 +1,77 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.smartphone{
+  position: relative;
+  width: 337px;
+  height: 554px;
+  border: 0.6rem solid rgb(36, 36, 36);
+  border-bottom: none;
+  border-radius: 4rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem;
+}
+.smartphone:before{
+  content: '';
+  height: 4% ;
+  width: 50%;
+  background-color: rgb(36, 36, 36) ;
+  z-index: 100;
+  position: absolute;
+  left: 25%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.phone-carousel{
+  height:75%;
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+  background-size: cover;
+  background-position: center;
+  animation: carousel 10s alternate infinite;
+}
+
+@keyframes carousel{
+  0%{
+    background-image: url('../images/dog-img.jpg');
+  }
+  25%{
+    background-image:url('../images/dog1.jpg') ;
+  }
+  50%{
+    background-image: url('../images/dog2webp.webp');
+  }
+  75%{
+    background-image: url('../images/dog-img.jpg');
+  }
+  100%{
+    background-image:url('../images/dog1.jpg') ;
+  }
+}
